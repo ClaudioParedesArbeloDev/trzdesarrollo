@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;600&display=swap");
+@import '@fortawesome/fontawesome-free/css/all.css';
+footer {
+  font-family: "Poppins", sans-serif;
+  background: rgb(0, 73, 118);
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  justify-content: center;
+}
+
+.leftSide a img {
+  width: 150px;
+}
+.leftSide div a img {
+  fill: #fff;
+  width: 50px;
+}/*# sourceMappingURL=footer.css.map */

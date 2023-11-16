@@ -1,0 +1,78 @@
+@import '../colors/colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;600&display=swap');
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+
+.header{
+    background: linear-gradient($primaryColor, $secondaryColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img{
+        width: 190px;
+        padding: 20px 0 20px ;
+    }
+    nav{
+        display: flex;
+        li{
+            text-decoration: none;
+            list-style: none;
+            color: $textColor;
+            
+            font-family: 'Poppins', sans-serif;
+            font-weight: lighter; 
+            font-size: 1em;
+        }
+        a{
+            position: relative;
+            color: $textColor;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 0 5px 0 5px;
+            margin: 0 5px 0 5px;
+        }
+        a:before{
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            height: 2px;
+            width: 0;
+            background: $textColor;
+            border-radius: 50px;
+            transition: width 0.5s ease;
+        }
+        a:hover:before{
+            width: 93%;
+        }
+    }
+    div{
+        display: flex;
+        align-items: center;
+        border: 0.8px solid $textColor;
+        border-radius: 35px;
+        padding: 0 25px 0 25px ;
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            list-style: none;
+            i{
+            color: $textColor;
+            font-size: 1.5em;
+            }
+            p{
+            list-style: none;
+            text-decoration: none;
+            color: $textColor;
+            font-family: 'Poppins', sans-serif;
+            font-weight: lighter;
+            font-size: 1em;
+            padding-right: 10px; 
+            }
+        }
+    }
+    div:hover{
+        background-color: orangered;
+        transition: ease-in-out 1s;
+    }
+}
