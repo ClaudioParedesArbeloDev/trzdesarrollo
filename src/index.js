@@ -8,6 +8,7 @@ import './index.css';
 //Componentes
 import Navbar from './components/navbar/navbar.jsx'
 import Carrousel from './components/carrousel/carrousel.jsx';
+import Whatsapp from './components/whatsapp/whatsapp.jsx';
 import Footer from './components/footer/footer.jsx';
 
 
@@ -18,6 +19,7 @@ root.render(
   <React.StrictMode>
       <Navbar/>
       <Carrousel />
+      <Whatsapp />
       <Footer />
     
   </React.StrictMode>

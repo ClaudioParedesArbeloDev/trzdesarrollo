@@ -22,6 +22,7 @@ const Footer = () => {
                          <div className='socialMedia'>
                              <a href="https://web.facebook.com/TRZGestionInmobiliaria/?_rdc=1&_rdr" target="blank"><img src="/img/facebook.svg" alt="logo facebook"/></a>
                              <a href="https://instagram.com/trz.gi?igshid=MzMyNGUyNmU2YQ==" target="blank"><img src="/img/instagram.svg" alt="logo instagram" /></a>
+                             <a href="https://wa.me/+5493413181379" target="blank"><img src="/img/whatsapp1.svg" alt="logo instagram" /></a>
                          </div>
                 </div>
                 <div className='contact'>

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;600&display=swap");
 @import '@fortawesome/fontawesome-free/css/all.css';
 .headers {
-  background: linear-gradient(rgba(0, 46, 93, 0.7), rgba(0, 73, 118, 0.7));
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: space-around;
   align-items: center;
