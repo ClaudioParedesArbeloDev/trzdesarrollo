@@ -10,6 +10,7 @@ const images = [
 
 const Carousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
+    
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
@@ -17,20 +18,12 @@ const Carousel = () => {
         return () => clearInterval(interval);
     }, []);
 
+const currentImage = images[currentSlide];
+
 
 return(
-    <div className="carousel">
-    
-    <div className="slide-container">
-      {images.map((image, index) => (
-        <div key={index} className={`slide ${index === currentSlide ? 'active' : ''}`}>
-        <img src={image.url} alt={image.description} />
-          
-        </div>
-      ))}
+    <div className="carousel" style={{ backgroundImage: `url(${currentImage.url})` }}>
+    <div className="carousel-overlay"></div>
     </div>
-  </div>
-);
-};
-
+)}
 export default Carousel

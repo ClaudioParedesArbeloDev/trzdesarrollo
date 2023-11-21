@@ -1,19 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;600&display=swap");
 @import '@fortawesome/fontawesome-free/css/all.css';
-.header {
-  background: linear-gradient(rgb(0, 46, 93), rgb(0, 73, 118));
+.headers {
+  background: linear-gradient(rgba(0, 46, 93, 0.7), rgba(0, 73, 118, 0.7));
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  width: 100%;
 }
-.header img {
+.headers img {
   width: 190px;
   padding: 20px 0 20px;
 }
-.header nav {
+.headers nav {
   display: flex;
 }
-.header nav li {
+.headers nav li {
   text-decoration: none;
   list-style: none;
   color: #fff;
@@ -21,7 +23,7 @@
   font-weight: lighter;
   font-size: 1em;
 }
-.header nav a {
+.headers nav a {
   position: relative;
   color: #fff;
   font-weight: 600;
@@ -29,7 +31,7 @@
   padding: 0 5px 0 5px;
   margin: 0 5px 0 5px;
 }
-.header nav a:before {
+.headers nav a:before {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -39,27 +41,27 @@
   border-radius: 50px;
   transition: width 0.5s ease;
 }
-.header nav a:hover:before {
+.headers nav a:hover:before {
   width: 93%;
 }
-.header div {
+.headers div {
   display: flex;
   align-items: center;
   border: 0.8px solid #fff;
   border-radius: 35px;
   padding: 0 25px 0 25px;
 }
-.header div a {
+.headers div a {
   display: flex;
   align-items: center;
   text-decoration: none;
   list-style: none;
 }
-.header div a i {
+.headers div a i {
   color: #fff;
   font-size: 1.5em;
 }
-.header div a p {
+.headers div a p {
   list-style: none;
   text-decoration: none;
   color: #fff;
@@ -68,7 +70,11 @@
   font-size: 1em;
   padding-right: 10px;
 }
-.header div:hover {
+.headers div:hover {
   background-color: orangered;
   transition: ease-in-out 1s;
+}
+
+.header.hidden {
+  display: none;
 }/*# sourceMappingURL=navbar.css.map */

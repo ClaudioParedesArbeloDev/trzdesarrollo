@@ -3,11 +3,13 @@
 @import '@fortawesome/fontawesome-free/css/all.css';
 
 
-.header{
-    background: linear-gradient($primaryColor, $secondaryColor);
+.headers{
+    background: linear-gradient(rgba($primaryColor, 0.7), rgba($secondaryColor, 0.7));
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    width: 100%;
     img{
         width: 190px;
         padding: 20px 0 20px ;
@@ -18,7 +20,6 @@
             text-decoration: none;
             list-style: none;
             color: $textColor;
-            
             font-family: 'Poppins', sans-serif;
             font-weight: lighter; 
             font-size: 1em;
@@ -75,4 +76,7 @@
         background-color: orangered;
         transition: ease-in-out 1s;
     }
+}
+.header.hidden {
+    display: none;
 }

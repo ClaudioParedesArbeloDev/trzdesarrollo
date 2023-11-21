@@ -2,7 +2,7 @@
 @import '@fortawesome/fontawesome-free/css/all.css';
 footer {
   font-family: "Poppins", sans-serif;
-  background: rgb(0, 73, 118);
+  background: linear-gradient(rgb(0, 73, 118), rgb(0, 46, 93));
   display: grid;
   grid-template-rows: repeat(2, auto);
 }
