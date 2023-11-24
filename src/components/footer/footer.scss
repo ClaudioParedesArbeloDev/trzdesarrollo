@@ -37,8 +37,12 @@ footer{
     gap: 20px;
     
     a{
-        img{
-            width: 30px;
+        i{
+            color: $textColor;
+            font-size: 30px;
+        }
+        i:hover{
+            color: rgb(247, 187, 76);
         }
     }
 }
@@ -105,6 +109,9 @@ footer{
         list-style: none;
         p{
             color: $textColor
+        }
+        p:hover{
+            color:  rgb(247, 187, 76);
         }
     }
 }

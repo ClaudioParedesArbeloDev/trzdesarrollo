@@ -1,5 +1,5 @@
 @import '../colors/colors.scss';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import '@fortawesome/fontawesome-free/css/all.css';
 
 
@@ -10,41 +10,31 @@
     align-items: center;
     position: fixed;
     width: 100%;
-    img{
-        width: 190px;
-        padding: 20px 0 20px ;
-    }
     nav{
+        align-items: center;
         display: flex;
+        img{
+            width: 190px;
+            padding: 20px 10px 20px ;
+        }
+        
         li{
-            text-decoration: none;
             list-style: none;
             color: $textColor;
             font-family: 'Poppins', sans-serif;
-            font-weight: lighter; 
+            font-weight: 500; 
             font-size: 1em;
         }
+        li:hover{
+            color: $primaryColor;
+            transition: ease-in-out 0.5s;
+        }
         a{
-            position: relative;
-            color: $textColor;
-            font-weight: 600;
             text-decoration: none;
             padding: 0 5px 0 5px;
             margin: 0 5px 0 5px;
         }
-        a:before{
-            content: "";
-            position: absolute;
-            bottom: -2px;
-            height: 2px;
-            width: 0;
-            background: $textColor;
-            border-radius: 50px;
-            transition: width 0.5s ease;
-        }
-        a:hover:before{
-            width: 93%;
-        }
+      
     }
     div{
         display: flex;
@@ -52,29 +42,27 @@
         border: 0.8px solid $textColor;
         border-radius: 35px;
         padding: 0 25px 0 25px ;
+        text-transform: uppercase;
         a{
             display: flex;
             align-items: center;
             text-decoration: none;
             list-style: none;
-            i{
             color: $textColor;
             font-size: 1.5em;
-            }
-            p{
-            list-style: none;
-            text-decoration: none;
-            color: $textColor;
             font-family: 'Poppins', sans-serif;
             font-weight: lighter;
             font-size: 1em;
             padding-right: 10px; 
+            img{
+                width: 30px;
+                padding: 7px 10px;
             }
         }
     }
     div:hover{
-        background-color: orangered;
-        transition: ease-in-out 1s;
+        background-color:$primaryColor;
+        transition: ease-in-out 0.5s;
     }
 }
 .header.hidden {

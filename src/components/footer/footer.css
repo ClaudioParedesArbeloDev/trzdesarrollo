@@ -32,8 +32,12 @@ footer {
   grid-template-columns: repeat(3, auto);
   gap: 20px;
 }
-.socialMedia a img {
-  width: 30px;
+.socialMedia a i {
+  color: #fff;
+  font-size: 30px;
+}
+.socialMedia a i:hover {
+  color: rgb(247, 187, 76);
 }
 
 .contact {
@@ -97,6 +101,9 @@ footer {
 }
 .links a p {
   color: #fff;
+}
+.links a p:hover {
+  color: rgb(247, 187, 76);
 }
 
 .footerDown {
