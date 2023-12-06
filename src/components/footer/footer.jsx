@@ -20,9 +20,9 @@ const Footer = () => {
                 <div className= 'leftSide'>
                          <a href="home"><img src="/img/logoBlanco.png" alt="Logo Empresa" /></a>
                          <div className='socialMedia'>
-                             <a href="https://web.facebook.com/TRZGestionInmobiliaria/?_rdc=1&_rdr" target="blank"><i class="fa-brands fa-square-facebook"></i></a>
-                             <a href="https://instagram.com/trz.gi?igshid=MzMyNGUyNmU2YQ==" target="blank"><i class="fa-brands fa-square-instagram"></i></a>
-                             <a href="https://wa.me/+5493413181379" target="blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+                             <a href="https://web.facebook.com/TRZGestionInmobiliaria/?_rdc=1&_rdr" target="blank"><i className="fa-brands fa-square-facebook"></i></a>
+                             <a href="https://instagram.com/trz.gi?igshid=MzMyNGUyNmU2YQ==" target="blank"><i className="fa-brands fa-square-instagram"></i></a>
+                             <a href="https://wa.me/+5493413181379" target="blank"><i className="fa-brands fa-square-whatsapp"></i></a>
                          </div>
                 </div>
                 <div className='contact'>

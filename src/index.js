@@ -18,11 +18,11 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <Navbar/>
-      <Carrousel />
-      <Main />
-      <Whatsapp />
-      <Footer />
+     <Navbar/> 
+     <Carrousel />
+     <Main />
+     <Whatsapp />
+     <Footer />
     
   </React.StrictMode>
 );
